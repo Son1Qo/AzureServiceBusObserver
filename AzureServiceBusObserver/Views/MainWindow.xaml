@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:AzureServiceBusObserver.ViewModels;assembly=AzureServiceBusObserver"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="AzureServiceBusObserver.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AzureServiceBusObserver"
+        Width="600" 
+        Height="400">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <DockPanel>
+        
+        <StackPanel>
+            <TextBox Text="{Binding ConnectionString}" Margin="10" >Enter connection string</TextBox>
+            <Button>Connection</Button>
+        </StackPanel>
+    </DockPanel>
+
+    
+    
+
+</Window>
